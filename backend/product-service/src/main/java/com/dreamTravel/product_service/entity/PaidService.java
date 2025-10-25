@@ -16,4 +16,8 @@ public class PaidService {
     private String description;
 
     private BigDecimal price;
+
+    @ManyToOne
+    @JoinColumn(name = "travel_offer_id")
+    private TravelOffer travelOffer;
 }

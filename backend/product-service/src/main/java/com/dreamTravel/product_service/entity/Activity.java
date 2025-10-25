@@ -21,4 +21,8 @@ public class Activity {
     private Integer minAge;
 
     private Integer maxAge;
+
+    @ManyToOne
+    @JoinColumn(name = "travel_offer_id")
+    private TravelOffer travelOffer;
 }

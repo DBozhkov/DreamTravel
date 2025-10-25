@@ -28,4 +28,8 @@ public class Excursion {
     private String startingPoint;
 
     private String duration;
+
+    @ManyToOne
+    @JoinColumn(name = "travel_offer_id")
+    private TravelOffer travelOffer;
 }

@@ -15,4 +15,8 @@ public class Traveler {
     private String passportNumber;
     private String gender;
     private String notes;
+
+    @ManyToOne
+    @JoinColumn(name = "booking_id")
+    private Booking booking;
 }
